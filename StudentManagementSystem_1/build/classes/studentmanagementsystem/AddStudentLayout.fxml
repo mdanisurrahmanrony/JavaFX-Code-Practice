@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.AddStudentLayoutController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="532.0" spacing="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <TextField fx:id="studentName" />
+         </children>
+         <padding>
+            <Insets left="68.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="532.0" spacing="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <TextField fx:id="studentEmail" />
+         </children>
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="532.0" spacing="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
+            <TextField fx:id="department" />
+         </children>
+         <padding>
+            <Insets left="35.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="532.0" spacing="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+            <TextArea fx:id="address" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+         <padding>
+            <Insets left="56.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="531.0" spacing="14.0">
+         <padding>
+            <Insets left="56.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#saveButtonAction" text="Save" />
+            <Button mnemonicParsing="false" onAction="#resetButtonAction" text="Reset" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
